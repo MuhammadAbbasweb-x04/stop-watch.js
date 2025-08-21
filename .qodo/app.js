@@ -2,13 +2,13 @@ let hour = document.querySelector("#hour");
 let minute = document.querySelector("#minute");
 let second = document.querySelector("#second");
 
-
+let satrt;
 
 let sec = 0;
 let min = 0;
 let hur = 0;
 function satrtfnc(){
-setInterval (function(){
+satrt=setInterval (function(){
     sec++
 if(sec === 60){
 sec = 0;
@@ -45,10 +45,18 @@ hour.innerHTML = "0" +  hur;
 
 
 
-// function stopfnc(){
-// clearInterval (function (){
+function stopfnc(){
+clearInterval (satrt)
+console.log("hello");
 
-// })
-// }
+}
+function resetFnc(){
+    clearInterval(satrt);
+    sec = 0;
+    min = 0;
+    hur = 0;
+}
+
+
 
 
