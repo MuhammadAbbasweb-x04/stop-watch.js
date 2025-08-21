@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+span{
+    font-size: 13rem;
+    margin: 10px;
+}
+
+button{
+padding: 10px 50px;
+font-size: 1.2rem;
+border: none;
+border-radius: 5px;
+background-color: #ab53fd;
+cursor: pointer;
+position: relative;
+left: 120px;
+}
+
+
+button:hover{
+background-color: #821be2;
+}
