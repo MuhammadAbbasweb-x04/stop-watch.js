@@ -50,12 +50,42 @@ clearInterval (satrt)
 console.log("hello");
 
 }
-function resetFnc(){
+function resetfnc(){
     clearInterval(satrt);
     sec = 0;
     min = 0;
     hur = 0;
 }
+
+
+
+
+
+function btnlight(){
+document.body.style.backgroundColor = "white";
+hour.style.color = "black"
+minute.style.color = "black"
+second.style.color = "black"
+}
+
+function btndark(){
+document.body.style.backgroundColor = "black";
+hour.style.color = "white"
+minute.style.color = "white"
+second.style.color = "white"
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
