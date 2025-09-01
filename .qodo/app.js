@@ -1,7 +1,6 @@
 let hour = document.querySelector("#hour");
 let minute = document.querySelector("#minute");
 let second = document.querySelector("#second");
-
 let satrt;
 
 let sec = 0;
@@ -47,14 +46,18 @@ hour.innerHTML = "0" +  hur;
 
 function stopfnc(){
 clearInterval (satrt)
-console.log("hello");
+console.log("Stop Watch Is Stop");
 
 }
 function resetfnc(){
-    clearInterval(satrt);
+    clearInterval (satrt);
+    hour.innerHTML = "00"
+    second.innerHTML = "00"
+    minute.innerHTML = "00"
     sec = 0;
     min = 0;
     hur = 0;
+    console.log("Stop Watch Is Reset");
 }
 
 
